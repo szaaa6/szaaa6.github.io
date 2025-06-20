@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suri Agatha Zastalie | Cyber Security Specialist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <header class="glass-header">
         <div class="container">
             <a href="#" class="logo">SURI<span>ZASTALIE</span></a>
@@ -16,9 +17,7 @@
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                    <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
-                    <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
-                    <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate"></i> Certifications</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
                     <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
                 <div class="menu-toggle">
@@ -28,31 +27,195 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="typing-text"></h1>
-                    <p class="subtitle">Cyber Security Student | Ethical Hacker | CTF Player</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary pulse"><i class="fas fa-laptop-code"></i> View Projects</a>
-                        <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Contact Me</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="hexagon"></div>
-                    <img src="assets/images/profile.jpg" alt="Suri Agatha Zastalie" class="profile-img">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="typing-text"></h1>
+                <p class="subtitle">Cyber Security Student | Ethical Hacker | CTF Player</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary pulse"><i class="fas fa-laptop-code"></i> View Projects</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Contact Me</a>
                 </div>
             </div>
-            <div class="scroll-down">
-                <span>Scroll Down</span>
-                <i class="fas fa-chevron-down"></i>
+            <div class="hero-image">
+                <div class="hexagon"></div>
+                <img src="assets/profile.jpg" alt="Suri Agatha Zastalie" class="profile-img">
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title"><span>About</span> Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Cyber Security Enthusiast</h3>
+                    <p>I specialize in identifying vulnerabilities in systems and networks, conducting security assessments, and implementing robust security measures to protect against cyber threats.</p>
+                    
+                    <div class="skills-section">
+                        <h4><i class="fas fa-shield-alt"></i> My Skills</h4>
+                        <div class="skills-container">
+                            <div class="skill-category">
+                                <h5>Offensive Security</h5>
+                                <div class="skills">
+                                    <div class="skill" data-percent="90">
+                                        <span>Penetration Testing</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill" data-percent="85">
+                                        <span>Network Security</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h5>Tools & Technologies</h5>
+                                <div class="skills">
+                                    <div class="skill" data-percent="80">
+                                        <span>Metasploit</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill" data-percent="75">
+                                        <span>Burp Suite</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="certification-card">
+                        <h4>Certifications</h4>
+                        <ul>
+                            <li><i class="fas fa-certificate"></i> CEH (Certified Ethical Hacker)</li>
+                            <li><i class="fas fa-certificate"></i> CompTIA Security+</li>
+                            <li><i class="fas fa-certificate"></i> eJPT</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Other sections (About, Skills, Experience, Certifications, Contact) -->
-    <!-- ... (Include all other sections from previous examples) ... -->
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Network Security Audit</h3>
+                    </div>
+                    <p>Comprehensive security assessment of corporate network infrastructure.</p>
+                    <div class="project-tags">
+                        <span>Penetration Testing</span>
+                        <span>Nmap</span>
+                        <span>Nessus</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Case Study</a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web App Security</h3>
+                    </div>
+                    <p>Identified and exploited vulnerabilities in web applications.</p>
+                    <div class="project-tags">
+                        <span>OWASP</span>
+                        <span>Burp Suite</span>
+                        <span>SQLi</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Case Study</a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3>Malware Analysis</h3>
+                    </div>
+                    <p>Reverse engineered ransomware sample and developed detection signatures.</p>
+                    <div class="project-tags">
+                        <span>IDA Pro</span>
+                        <span>YARA</span>
+                        <span>Reverse Engineering</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Research</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>suri.zastalie@protonmail.com</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fab fa-keybase"></i>
+                        <h4>PGP Key</h4>
+                        <p>0x1A2B3C4D5E6F7890</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-hackerrank"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Secure Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SURI<span>ZASTALIE</span></div>
+                <p>© 2023 Suri Agatha Zastalie. All rights reserved.</p>
+                <p class="disclaimer">No tracking • No cookies • Privacy focused</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
